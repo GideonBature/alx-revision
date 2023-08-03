@@ -1,29 +1,25 @@
 #!/bin/env python3
-height = input("How high is the tree?: ")
-height = int(height)
+h = eval(input("What is the height of the tree? "))
 
-spaces = height - 1
-
+spaces = h - 1
 stars = 1
+trunck_spaces = h - 1
 
-stump_spaces = height - 1
-
-while height != 0:
-
+while h != 0:
     for i in range(spaces):
         print(' ', end="")
 
     for i in range(stars):
         print('*', end="")
 
-    print("")
-
     spaces -= 1
     stars += 2
 
-    height -= 1
+    h -= 1
 
-for i in range(stump_spaces):
+    print()
+
+for i in range(trunck_spaces):
     print(' ', end="")
 
 print('*')

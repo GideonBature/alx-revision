@@ -15,4 +15,4 @@ elif (op == '/'):
 elif (op == '%'):
     print(f"{num1} {op} {num2} = {num1 % num2}")
 else:
-    printf("invalid input")
+    print("invalid input")

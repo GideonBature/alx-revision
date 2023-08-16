@@ -1,14 +1,30 @@
-#!/bin/env python3
-num1, num2 = input("Enter two numbers, seperated by space: ").split()
+#!/usr/bin/python3
 
-num1 = int(num1)
-num2 = int(num2)
+def add(x, y):
+    return x + y
 
-sum = num1 + num2
-diff = num1 - num2
-mul = num1 * num2
-div = num1 / num2
-mod = num1 % num2
+def sub(x, y):
+    return x - y
 
-print("num1:{}\nnum2:{}\nSum: {}\nDifference: {}\nProduct: {}\nDivision: {}\nModulus: {} ".format(num1, num2, sum, diff, mul, div, mod))
-print(f"\nnum1:{num1}\nnum2:{num2}\nSum: {sum}\nDifference: {diff}\nProduct: {mul}\nDivision: {div}\nModulus: {mod} ")
+def mul(x, y):
+    return x * y
+
+def div(x, y):
+    return x / y
+
+def mod(x, y):
+    return x % y
+
+
+if __name__ == "__main__":
+    import sys
+    x = sys.argv[1]
+    x = int(x)
+    y = sys.argv[2]
+    y = int(y)
+
+    print("Addition:", add(x, y))
+    print("Subtraction:", sub(x, y))
+    print("Multiplication:", mul(x, y))
+    print(f"Division: {div(x, y):.2f}")
+    print("Modulus:", mod(x, y))

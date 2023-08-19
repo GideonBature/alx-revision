@@ -1,10 +1,11 @@
 #include "shell.h"
-
 /**
  * env - print the enivornment.
  *
  * Return: nothing.
  */
+
+/**
 void env(void)
 {
 	char **env = environ;
@@ -16,11 +17,15 @@ void env(void)
 		env++;
 	}
 }
+*/
+
 /**
  * _getenv - get an environment variable.
  * @name: environment variable.
  * Return: This will return a value.
  */
+
+/**
 char *_getenv(const char *name)
 {
 	size_t len = _strlen(name);
@@ -35,3 +40,5 @@ char *_getenv(const char *name)
 	}
 	return (NULL);
 }
+
+*/

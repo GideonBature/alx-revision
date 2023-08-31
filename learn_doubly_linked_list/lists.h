@@ -19,5 +19,6 @@ void add_node_at_beg_without_return(int data, node_t **head);
 void add_node_at_pos(int data, int pos, node_t *head);
 node_t *del_node_at_beg(node_t *head);
 void del_node_at_end(node_t *head);
+void del_node_at_end_sp(node_t *head);
 
 #endif

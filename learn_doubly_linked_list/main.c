@@ -34,6 +34,7 @@ int main(void)
 	add_node_at_end(65, head);
 	head = del_node_at_beg(head);
 	del_node_at_end(head);
+	del_node_at_end_sp(head);
 	count_nodes(head);
 	print_node_data(head);
 

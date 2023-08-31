@@ -29,6 +29,7 @@ int main(void)
 	head = add_node_at_beg_return(25, head);
 	add_node_at_end(75, head);
 	add_node_at_pos(10, 3, head);
+	head = del_node_at_beg(head);
 	count_nodes(head);
 	print_node_data(head);
 

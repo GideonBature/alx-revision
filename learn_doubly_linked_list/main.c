@@ -28,6 +28,7 @@ int main(void)
 	current->next = NULL;
 	head->next->next = current;
 
+	head = add_node_at_beg(25, head);
 	add_node_at_end(65, head);
 	count_nodes(head);
 	print_node_data(head);

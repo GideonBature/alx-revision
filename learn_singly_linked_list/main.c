@@ -36,6 +36,10 @@ int main(void)
 	printf("\n---- Nodes Before Deletion ---\n");
 	count_nodes(head);
 	print_node_data(head);
+	printf("\n---- Nodes Reversed ---\n");
+	head = reverse(head);
+	count_nodes(head);
+	print_node_data(head);
 	printf("\n---- Nodes After Deletion ---\n");
 	head = del_node_all(head);
 	count_nodes(head);

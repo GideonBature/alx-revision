@@ -3,9 +3,11 @@
 int main(void)
 {
 	node_t *head, *current = NULL;
+	
 
 	head = malloc(sizeof(node_t));
 	current = malloc(sizeof(node_t));
+
 
 	if (head == NULL || current == NULL)
 		exit(1);
@@ -23,6 +25,7 @@ int main(void)
 	current->next = NULL;
 	head->next->next = current;
 
+	head = add_node_at_beg(35, head);
 	add_node_at_end(75, head);
 	count_nodes(head);
 	print_node_data(head);

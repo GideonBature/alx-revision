@@ -5,6 +5,7 @@ void del_node_at_end(node_t *head)
 	node_t *temp, *temp2;
 
 	temp = head;
+	temp2 = head;
 
 	if (!temp)
 		exit(1);

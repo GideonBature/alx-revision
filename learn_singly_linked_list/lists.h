@@ -20,5 +20,6 @@ node_t *del_node_at_beg(node_t *head);
 void del_node_at_end(node_t *head);
 void del_node_at_end_sp(node_t *head);
 void del_node_at_pos(int pos, node_t *head);
+node_t *del_node_all(node_t *head);
 
 #endif

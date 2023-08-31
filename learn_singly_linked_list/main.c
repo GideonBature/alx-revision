@@ -33,6 +33,11 @@ int main(void)
 	del_node_at_end(head);
 	del_node_at_end_sp(head);
 	del_node_at_pos(3, head);
+	printf("\n---- Nodes Before Deletion ---\n");
+	count_nodes(head);
+	print_node_data(head);
+	printf("\n---- Nodes After Deletion ---\n");
+	head = del_node_all(head);
 	count_nodes(head);
 	print_node_data(head);
 

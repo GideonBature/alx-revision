@@ -10,4 +10,6 @@ typedef struct node
 #include <stdio.h>
 #include <stdlib.h>
 
+void count_nodes(node_t *head);
+
 #endif

@@ -27,6 +27,7 @@ int main(void)
 	printf("Data2: %d\n", head->next->data);
 	printf("Data3: %d\n", head->next->next->data);
 
+	count_nodes(head);
 
 
 	return (0);

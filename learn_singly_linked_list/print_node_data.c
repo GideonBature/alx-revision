@@ -8,7 +8,10 @@ void print_node_data(node_t *head)
 	ptr = malloc(sizeof(node_t));
 
 	if (!ptr)
+	{
+		printf("There are no nodes available\n");
 		exit(1);
+	}
 
 	ptr = head;
 

@@ -13,6 +13,7 @@ typedef struct node
 void count_nodes(node_t *head);
 void print_node_data(node_t *head);
 void add_node_at_end(int data, node_t *head);
-node_t *add_node_at_beg(int data, node_t *head);
+void add_node_at_beg(int data, node_t **head);
+node_t *add_node_at_beg_return(int data, node_t *head);
 
 #endif

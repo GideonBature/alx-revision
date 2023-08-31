@@ -1,10 +1,10 @@
 #include "lists.h"
 
-node_t *add_node_at_beg(int data, node_t *head)
+void add_node_at_beg(int data, node_t **head)
 {
 	node_t *ptr, *new_node;
 
-	ptr = head;
+	ptr = *head;
 
 	new_node = malloc(sizeof(node_t));
 
@@ -13,7 +13,5 @@ node_t *add_node_at_beg(int data, node_t *head)
 
 	new_node->data = data;
 	new_node->next = ptr;
-	head = new_node;
-
-	return (head);
+	*head = new_node;
 }

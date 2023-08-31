@@ -36,5 +36,8 @@ int main(void)
 	printf("Data2: %d\n", current->prev->data);
 	printf("Data3: %d\n", current->prev->prev->data);
 
+
+	count_nodes(head);
+
 	return (0);
 }

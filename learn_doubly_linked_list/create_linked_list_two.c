@@ -31,6 +31,10 @@ int main(void)
 	printf("Data1: %d\n", head->data);
 	printf("Data2: %d\n", head->next->data);
 	printf("Data3: %d\n", head->next->next->data);
+	
+	printf("\nData1: %d\n", current->data);
+	printf("Data2: %d\n", current->prev->data);
+	printf("Data3: %d\n", current->prev->prev->data);
 
 	return (0);
 }

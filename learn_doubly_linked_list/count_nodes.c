@@ -19,5 +19,5 @@ void count_nodes(node_t *head)
 		ptr = ptr->next;
 	}
 
-	printf("\nNumber of nodes: %d\n", count);
+	printf("Number of nodes: %d\n\n", count);
 }

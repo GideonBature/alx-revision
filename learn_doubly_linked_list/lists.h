@@ -12,5 +12,6 @@ typedef struct node
 #include <stdlib.h>
 
 void count_nodes(node_t *head);
+void print_node_data(node_t *head);
 
 #endif

@@ -21,12 +21,12 @@ int main(void)
 
 	current->data = 65;
 	current->next = NULL;
+	head->next->next = current;
 
 	printf("Data1: %d\n", head->data);
 	printf("Data2: %d\n", head->next->data);
-	printf("Data3: %d\n", current->data);
+	printf("Data3: %d\n", head->next->next->data);
 
-	head->next->next = current;
 
 
 	return (0);

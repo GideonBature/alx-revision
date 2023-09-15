@@ -4,12 +4,9 @@
 
 def mul(*args):
 	result = 1
-	if args is None:
-		print("Please enter an argument")
-	else:
-		for arg in args:
-			result *= arg
+	for arg in args:
+		result *= arg
 	return result
 
-res = mul()
+res = mul(4, 9, 2, -8, 3, 6)
 print(res)

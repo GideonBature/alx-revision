@@ -1,5 +1,21 @@
 #include "search_algos.h"
 
+int print_array(int *array, int low, int high)
+{
+	char *seperator = NULL;
+
+	printf("Searching in array: ");
+
+	for (; low <= high; low++)
+	{
+		if (seperator != NULL)
+			printf("%s", seperator);
+		printf("%d", array[low]);
+		seperator = ", ";
+	}
+	printf("\n");
+}
+
 int binary_search(int *array, size_t size, int value)
 {
 	int low = 0, high = size - 1, mid;
@@ -9,9 +25,9 @@ int binary_search(int *array, size_t size, int value)
 
 	while (low != high)
 	{
+		print_array(array, low, high);
 		mid = (low + high) / 2;
-		printf("Value checked array[%d] = [%d]\n", mid, array[mid]);
-
+	
 		if (array[mid] == value)
 			return (mid);
 		else if (array[mid] > value)

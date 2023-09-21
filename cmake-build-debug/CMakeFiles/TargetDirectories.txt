@@ -1,3 +1,0 @@
-C:/Users/Bene Elohim Hub/Desktop/alx-revision/cmake-build-debug/CMakeFiles/alx_revision.dir
-C:/Users/Bene Elohim Hub/Desktop/alx-revision/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Bene Elohim Hub/Desktop/alx-revision/cmake-build-debug/CMakeFiles/rebuild_cache.dir

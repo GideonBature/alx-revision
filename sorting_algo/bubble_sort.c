@@ -3,7 +3,7 @@
 int main(void)
 {
     int i, j, flag, temp;
-    int array[] = { 16, 14, 5, 6, 8, 9, 10};
+    int array[] = { 16, 14, 5, 6, 8, 9, 10, 3, 12, 63, 3};
     int n = sizeof(array) / sizeof(array[0]);
 
     for (i = 0; i < n - 1; i++)
@@ -24,8 +24,7 @@ int main(void)
     }
 
     for (i = 0; i < n; i++)
-    {
-        printf("The array at index [%d] is [%d]\n", i, array[i]);
-    }
+        printf("The Sorted array at index [%d] is [%d]\n", i, array[i]);
+
 
 }

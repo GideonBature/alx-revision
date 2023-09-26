@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "This is a program to add variable x and y"
+read -p "Enter the value of x: " X
+read -p "Enter the value of y: " Y
+echo $((X + Y))

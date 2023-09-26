@@ -1,0 +1,6 @@
+#!/bin/bash
+NUM1=25
+NUM2=12
+DIV=$(($NUM1 / $NUM2))
+echo $DIV
+echo "$DIV" | bc

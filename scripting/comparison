@@ -1,0 +1,22 @@
+#!/bin/bash
+echo "This is a program to add variable x and y"
+read -p "Enter score : " NUM
+if [ $NUM -gt 0 -a $NUM -lt 40 ]
+then
+echo "F"
+elif [ $NUM -ge 40 -a $NUM -le 49 ]
+then
+echo "E"
+elif [ $NUM -ge 50 -a $NUM -le 54 ]
+then
+echo "D"
+elif [ $NUM -ge 55 -a $NUM -le 59 ]
+then
+echo "C"
+elif [ $NUM -ge 60 -a $NUM -le 69 ]
+then
+echo "B"
+elif [ $NUM -ge 70 -a $NUM -le 100 ]
+then
+echo "A"
+fi

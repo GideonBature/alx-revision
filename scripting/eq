@@ -1,0 +1,17 @@
+#!/bin/bash
+echo "This is a program to add variable x and y"
+read -p "Enter the value of x: " X
+read -p "Enter the value of y: " Y
+if [ $X -eq $Y ]
+then
+echo "$X is equal to $Y"
+elif [ $X -gt $Y ]
+then
+echo "$X is greater than $Y"
+elif [ $X -lt $Y ]
+then
+echo "$X is less than $Y"
+elif [ $X -ne $Y ]
+then
+echo "$X is not equal to $Y"
+fi

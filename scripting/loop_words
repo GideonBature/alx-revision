@@ -1,0 +1,5 @@
+#!/bin/bash
+for x in Gideon Funom Bature
+do
+echo $x
+done

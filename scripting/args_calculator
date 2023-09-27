@@ -25,4 +25,6 @@ echo "$(($NUM1/$NUM2))"
 elif [ $OP == '%' ]
 then
 echo "$(($NUM1%$NUM2))"
+else
+echo "Invalid operator: $OP"
 fi

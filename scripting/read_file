@@ -1,0 +1,7 @@
+#!/bin/bash
+LINE=1
+while read -r C_LINE
+do
+echo "$LINE: $C_LINE"
+((LINE+=1))
+done < "file.txt"

@@ -13,4 +13,16 @@ NUM2=$3
 if [ $OP == '+' ]
 then
 echo "$(($NUM1+$NUM2))"
+elif [ $OP == '-' ]
+then
+echo "$(($NUM1-$NUM2))"
+elif [ $OP == '*' ]
+then
+echo "$(($NUM1*$NUM2))"
+elif [ $OP == '/' ]
+then
+echo "$(($NUM1/$NUM2))"
+elif [ $OP == '%' ]
+then
+echo "$(($NUM1%$NUM2))"
 fi

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ $# -ne 3 ]
+then
+echo "Usage: $0 <number1> <operator> <number2>"
+exit 1
+fi
+
+
+NUM1=$1
+OP=$2
+NUM2=$3
+if [ $OP == '+' ]
+then
+echo "$(($NUM1+$NUM2))"
+fi

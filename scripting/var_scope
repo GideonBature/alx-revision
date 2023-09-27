@@ -1,0 +1,18 @@
+#!/bin/bash
+var1="Grace Andrew Ajogi"
+my_vars(){
+	echo "--- Accessing from inside the Function ---"
+	local var2="Gideon Bature"
+	var3="Funom"
+	echo "The name of my reward is $var1"
+	echo "My name is $var2"
+	echo "My tribal name is $var3"
+}
+
+my_vars
+
+
+echo "--- Accessing from outside the Function ---"
+echo "The name of my reward is $var1"
+echo "My name is $var2"
+echo "My tribal name is $var3"

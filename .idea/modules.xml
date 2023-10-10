@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/alx-revision.iml" filepath="$PROJECT_DIR$/.idea/alx-revision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/alx_revision.iml" filepath="$PROJECT_DIR$/.idea/alx_revision.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+echo "File name" $0
+echo "First args" $1
+echo "Second args" $2

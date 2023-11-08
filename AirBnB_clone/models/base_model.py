@@ -8,16 +8,18 @@ from datetime import datetime
 class BaseModel():
     """Base model class
     """
-
-    id = str(uuid.uuid4())
-    created_at = datetime.now()
-    updated_at = datetime.now()
+    def __init__(self):
+        """public instance attributes
+        """
+        self.id = str(uuid.uuid4())
+        self.created_at = datetime.now()
+        self.updated_at = datetime.now()
 
     def __str__(self):
         """the string rep of the object
         """
-        classname = BaseModel.__class__.__name__
-        print(f"[{classname}] (self.id) self.__dict__")
+        classname = self.__class__.__name__
+        print(f"[{classname}] ({self.id}) {self.__dict__}")
 
     def save(self):
         """updates the public instance attribute

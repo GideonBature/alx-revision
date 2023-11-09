@@ -11,6 +11,9 @@ class FileStorage():
     """
     __file_path = "file.json"
     __objects = {}
+    dict_class = {
+            'BaseModel': 'base_model'
+            }
 
     def all(self):
         """returns the dictionary __objects
@@ -43,4 +46,6 @@ class FileStorage():
         """
         with open(self.__file_path, "r", encoding="utf-8") as f:
             obj_dict = json.load(f)
-            self.__objects = {k: 
+            class_name = obj['__class__']
+            module_name = self.dict_class[class_name]
+

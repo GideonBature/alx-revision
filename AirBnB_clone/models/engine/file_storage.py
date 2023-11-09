@@ -48,4 +48,6 @@ class FileStorage():
             obj_dict = json.load(f)
             class_name = obj['__class__']
             module_name = self.dict_class[class_name]
+            del obj['__class__']
+            self.new(eval(f"{module_name}.{class_name}")(**obj))
 

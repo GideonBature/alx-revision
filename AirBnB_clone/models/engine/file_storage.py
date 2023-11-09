@@ -3,7 +3,7 @@
 """
 import json
 import os
-from .. import base_model
+from models import base_model
 
 class FileStorage():
     """serializes instances to a JSON file
@@ -46,8 +46,8 @@ class FileStorage():
         """
         with open(self.__file_path, "r", encoding="utf-8") as f:
             obj_dict = json.load(f)
-            class_name = obj['__class__']
-            module_name = self.dict_class[class_name]
-            del obj['__class__']
-            self.new(eval(f"{module_name}.{class_name}")(**obj))
-
+            for obj in obj_dict.values():
+                class_name = obj['__class__']
+                module_name = self.dict_class[class_name]
+                del obj['__class__']
+                self.new(eval(f"{module_name}.{class_name}")(**obj))

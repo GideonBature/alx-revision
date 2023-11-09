@@ -2,7 +2,7 @@
 """creates unique FileStorage instance for
 your application
 """
-from .engine import file_storage
+from .engine.file_storage import FileStorage
 
 storage = FileStorage()
 storage.reload()

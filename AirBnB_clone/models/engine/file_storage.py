@@ -1,8 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """FileStorage class
 """
 import json
-import os
 from models import base_model
 
 class FileStorage():

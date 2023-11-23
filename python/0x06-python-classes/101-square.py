@@ -2,12 +2,12 @@
 """square class
 """
 
+
 class Square():
     """square class
     """
     def __init__(self, size=0, position=(0, 0)):
         """constructor
-        
         size(private): size of square
         """
         if type(size) is not int:
@@ -38,14 +38,13 @@ class Square():
 
     @position.setter
     def position(self, value):
-        if len(value) != 2 or type(value[0]) is not int or type(value[1]) is not int:
+        if len(value) != 2 or type(value[0]) is not int or type(value[1]) \
+                is not int:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
-
-
 
     def area(self):
         return self.__size * self.__size
@@ -60,7 +59,7 @@ class Square():
                 spaces = self.__position[0] * ' '
                 hashes = self.__size * '#'
                 print(f"{spaces}{hashes}")
-    
+
     def __str__(self):
         result = ''
         for idx in range(self.__position[1]):
@@ -73,4 +72,3 @@ class Square():
                 hashes = self.__size * '#'
                 result += f"{spaces}{hashes}\n"
         return result.rstrip()
-

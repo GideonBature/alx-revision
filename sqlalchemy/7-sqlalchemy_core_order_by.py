@@ -29,7 +29,7 @@ conn = engine.connect()
 sub = subjects.select().where(subjects.c.name == 'Mathematics')
 sub_rp = conn.execute(sub)
 
-stu = students.select().where(students.c.student_name == 'Gladys Simon')
+stu = students.select().where(students.c.student_name.like('%on%'))
 stu_rp = conn.execute(stu)
 
 for record in sub_rp:

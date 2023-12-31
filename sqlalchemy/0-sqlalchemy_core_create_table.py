@@ -41,3 +41,4 @@ line_items = Table('line_items', metadata,
 
 engine = create_engine("mysql+mysqldb://root:@localhost/test", pool_recycle=3600)
 metadata.create_all(engine)
+
